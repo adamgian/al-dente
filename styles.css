@@ -2,3 +2,15 @@
 .headerTop {
 	padding-right: .556em;
 }
+
+/* Don't allow body to scroll if cursor is within dialog */
+.dialog {
+	overscroll-behavior: contain;
+}
+
+/* Keep dialog header in view, at the top */
+.formDialogHeader {
+	position: sticky;
+	top: 0;
+	z-index: 2;
+}

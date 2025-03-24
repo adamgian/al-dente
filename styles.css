@@ -14,3 +14,11 @@
 	top: 0;
 	z-index: 2;
 }
+
+/* Immediately accessible save button */
+form > div:has(.button-submit),
+form > .button-submit {
+	bottom: 1em;
+	position: sticky;
+	z-index: 2;
+}

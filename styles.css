@@ -4,7 +4,7 @@
 }
 
 /* Don't allow body to scroll if cursor is within dialog */
-.dialog {
+.dialog, .formDialogContent {
 	overscroll-behavior: contain;
 }
 

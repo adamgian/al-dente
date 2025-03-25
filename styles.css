@@ -15,10 +15,18 @@
 	z-index: 2;
 }
 
-/* Immediately accessible save button */
+/* Immediately accessible save/cancel button */
 form > div:has(.button-submit),
 form > .button-submit {
 	bottom: 1em;
 	position: sticky;
 	z-index: 2;
+}
+
+/* Offset active playing bar */
+body:has(> .appfooter > [class="nowPlayingBar"]) :where(
+	form > div:has(.button-submit),
+	form > .button-submit
+) {
+	bottom: 5.2em; /* playing bar is currently 4.2em tall */
 }

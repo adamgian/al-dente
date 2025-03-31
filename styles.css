@@ -50,3 +50,19 @@ body:has(> .appfooter > [class="nowPlayingBar"]) :where(
 #homeTab .section0 [data-collectiontype="tvshows"] { order: 2 }
 #homeTab .section0 [data-collectiontype="music"]   { order: 3 }
 #homeTab .section0 [data-collectiontype="books"]   { order: 4 }
+
+
+/* Cast & crew section cards */
+#castContent .cardPadder {
+	aspect-ratio: 1 / 1;
+	padding-bottom: 0;
+}
+
+/* Center upwards slightly, seemingly more photos have the face higher */
+#castContent .cardContent {
+	background-position-y: 40%;
+}
+
+#castContent .cardScalable > :where(.cardPadder, .cardImageContainer, .cardOverlayContainer) {
+	border-radius: 50%;
+}

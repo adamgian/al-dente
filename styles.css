@@ -30,3 +30,23 @@ body:has(> .appfooter > [class="nowPlayingBar"]) :where(
 ) {
 	bottom: 5.2em; /* playing bar is currently 4.2em tall */
 }
+
+/* Home page "My Media" section */
+/* Rename "My media" to "All media" */
+#homeTab .section0 .sectionTitle {
+	font-size: 0;
+	padding-bottom: .3rem; /* .2em * 1.5em */
+	padding-top: .75rem; /* .5em * 1.5em */
+}
+#homeTab .section0 .sectionTitle::before {
+	content: "All media";
+	font-size: 1.5rem;
+}
+
+/* Default catch-all, move card to end */
+#homeTab .section0 [data-collectiontype] { order: 9 }
+/* Custom preferred ordering of my media collections */
+#homeTab .section0 [data-collectiontype="movies"]  { order: 1 }
+#homeTab .section0 [data-collectiontype="tvshows"] { order: 2 }
+#homeTab .section0 [data-collectiontype="music"]   { order: 3 }
+#homeTab .section0 [data-collectiontype="books"]   { order: 4 }

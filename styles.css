@@ -31,6 +31,19 @@ body:has(> .appfooter > [class="nowPlayingBar"]) :where(
 	bottom: 5.2em; /* playing bar is currently 4.2em tall */
 }
 
+/* Main drawer */
+/* Custom order of library items */
+.libraryMenuOptions {
+	display: flex;
+	flex-direction: column;
+}
+.libraryMenuOptions > a { order: 9 }
+.libraryMenuOptions > [href^="#/movies"] { order: 1 }
+.libraryMenuOptions > [href^="#/tv"]     { order: 2 }
+.libraryMenuOptions > [href^="#/music"]  { order: 3 }
+.libraryMenuOptions > a:has(> .book)     { order: 4 }
+
+
 /* Home page "My Media" section */
 /* Rename "My media" to "All media" */
 #homeTab .section0 .sectionTitle {

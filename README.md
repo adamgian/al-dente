@@ -3,5 +3,5 @@
 Jellyfin theme with opinionated UI/UX enhancements.
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/adamgian/al-dente/styles.min.css');
+@import url("https://cdn.jsdelivr.net/gh/adamgian/al-dente/styles.min.css");
 ```
